@@ -7,10 +7,9 @@ because of strcpy_s is a "safe" function which is optional in the C11 standard, 
 </p>
 
 </p>
-#include <<errno.h>>
-#include <<stddef.h>>
-#include <<string.h>>
-errno_t wcpy(char* Dest, size_t size, const char* source) {
+#include &ltstddef.h&gt
+#include &ltstring.h&gt
+int wcpy(char* Dest, size_t size, const char* source) {
 	
 	<br>
 	int v;
@@ -31,6 +30,7 @@ errno_t wcpy(char* Dest, size_t size, const char* source) {
 
 		 v = -1;
 		}
+<br>
 	 return v;
 }
 </p>
