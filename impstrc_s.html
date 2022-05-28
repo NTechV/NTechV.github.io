@@ -11,14 +11,22 @@ because of strcpy_s is a "safe" function which is optional in the C11 standard, 
 #include <stddef.h>
 #include <string.h>
 errno_t wcpy(char* Dest, size_t size, const char* source) {
+	
+	<br>
 	int v;
+	<br>
 	size_t b = strlen(source) + 1;
+	<br>
 	if (b == size || b < size) {
+				  <br>
 		for (size_t a = 0; a < b; a++) {
+					 
 			Dest[a] = source[a];
 		}
 		v = 0;
+			<br>	
 	}
+	<br>
 	 if (b > size || b > strlen(Dest ) + 1) {
 
 		 v = -1;
