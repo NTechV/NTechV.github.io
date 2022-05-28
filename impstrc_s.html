@@ -1,0 +1,28 @@
+<DOCTYPE! html>
+
+<h1> Writing your own strcpy_s in c </h1>
+
+<p> As you probably know if you are coding in Microsoft Visual Studio, there is a function called strcpy_s, now the function is useful but it only works on some compilers
+because of strcpy_s is a "safe" function which is optional in the C11 standard, but I have implemented a function which works like strcpy_s, so the source code is here: 
+</p>
+
+</p>
+#include <errno.h>
+#include <stddef.h>
+#include <string.h>
+errno_t wcpy(char* Dest, size_t size, const char* source) {
+	int v;
+	size_t b = strlen(source) + 1;
+	if (b == size || b < size) {
+		for (size_t a = 0; a < b; a++) {
+			Dest[a] = source[a];
+		}
+		v = 0;
+	}
+	 if (b > size || b > strlen(Dest ) + 1) {
+
+		 v = -1;
+		}
+	 return v;
+}
+</p>
