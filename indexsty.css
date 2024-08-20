@@ -1,5 +1,21 @@
-indexsty {color:black }
-
-vbsbotrep {color:black}
-
-Vbsbotworks {color:black}
+.intmenu {
+ background-color:darkslategrey;
+ width:80%;
+ margin-left:auto;
+ margin-right:auto;
+max-width:500px; 
+}
+h1 {
+    font-family:monospace,sans-serif,serif;
+    color:white;
+text-align:center;
+}
+.btn1 {
+width: 300px;
+height: 50px;
+font-size: 15px;
+text-align: center;
+color: white;   
+background-color: gray; 
+border: 1px solid black; 
+}
